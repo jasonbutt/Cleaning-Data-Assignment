@@ -7,8 +7,8 @@ if(!file.exists("c://data")){
     print("Creating directory")
 }
 print("Downloading file.")
-#fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-#download.file(fileUrl,destfile="C://data//Dataset.zip",method="curl")
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+download.file(fileUrl,destfile="C://data//Dataset.zip",method="curl")
 print("File downloaded")
 print("Extracting files.")
 unzip(zipfile="c://data//Dataset.zip",exdir="C://data")
